@@ -1,0 +1,33 @@
+{
+  "name": "user-mgmt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/bootstrap.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npx tspc -p tsconfig.json --watch\" \"nodemon -q ./dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "concurrently": "^8.2.2",
+    "prisma": "^5.4.2",
+    "ts-node": "^10.9.1",
+    "ts-patch": "^3.0.2",
+    "typescript": "^5.2.2",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.2",
+    "@types/module-alias": "^2.0.3",
+    "dotenv": "^16.3.1",
+    "module-alias": "^2.2.3",
+    "nats": "^2.17.0"
+  }
+}
