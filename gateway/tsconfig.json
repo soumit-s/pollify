@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "ESNext",
+        "sourceMap": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "target": "ES2017",
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"]
+        },
+        "plugins": [
+            {"transform": "typescript-transform-paths"},
+            {"transform": "typescript-transform-paths", "allowDeclarations": true}
+        ]
+    }
+}
